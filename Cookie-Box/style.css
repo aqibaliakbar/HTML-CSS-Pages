@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #292b2c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+.cookie-box{
+	width: 100%;
+	max-width: 365px;
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	padding: 25px 25px 30px;
+}
+
+.cookie-box img {
+	max-width: 90px;
+}
+
+.content{
+	margin-top: 10px;
+}
+
+.content h2{
+	font-size: 24px;
+}
+
+.content p{
+	font-size: 15px;
+	margin: 5px 0 25px;
+	color: #615f5f;
+}
+
+.btn-group{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.accept-btn{
+	padding: 10px 20px;
+	outline: none;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 2px solid #292b2c;
+	background-color: #292b2c;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.accept-btn:hover{
+	background-color: #fff;
+	color: #292b2c;
+}
+
+.learn-btn{
+	text-decoration: none;
+	color: #292b2c;
+}
+
+.learn-btn:hover{
+	text-decoration: underline;
+}
