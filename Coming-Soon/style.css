@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+.bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 43.3%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56.7%;
+  height: 100%;
+  background-color: #4e5b72;
+  z-index: -1;
+}
+
+#main {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  padding-top: 70px;
+  width: 100%;
+}
+
+nav button {
+  height: 80px;
+  width: 100px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #1e3050;
+  background-color: #1e3050;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#main-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-portion {
+  width: calc(60%);
+  margin-top: 80px;
+}
+
+#left-portion h1 {
+  font-size: 110px;
+  line-height: 112px;
+  color: #1e3050;
+}
+
+.wavy-img {
+  background-image: url("images/wave.png");
+  height: 20px;
+  width: 100%;
+  background-size: 645px 20px;
+  background-repeat: repeat-x;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 645px;
+  }
+}
+
+#left-portion p {
+  font-size: 35px;
+  letter-spacing: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.newsletter img {
+  width: 35px;
+  height: 50px;
+}
+
+.newsletter input[type="email"] {
+  padding: 20px 24px;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  box-shadow: 0px 0px 30px 7px #1e3050;
+  flex-grow: 1;
+  margin: 0 15px;
+  transition: 0.5s ease;
+  outline: none;
+}
+
+.newsletter input[type="email"]:focus {
+  border-color: #1e3050;
+  box-shadow: unset;
+}
+
+.newsletter input[type="email"]::placeholder {
+  color: #1e3050;
+  font-size: 18px;
+}
+
+.newsletter button {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 25px 24px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1e3050;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.newsletter button:hover {
+  background-color: #111b2e;
+}
+
+#right-portion {
+  width: calc(30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-box {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.img-box::before{
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: -30px;
+  width: 350px;
+  height: 480px;
+  border-radius: 50%;
+  border: 3px solid #f0f6ff;
+  z-index: 2;
+  animation: animate2 8s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -20px;
+    left: -20px;
+  }
+
+    50% {
+    top: -20px;
+    left: 20px;
+    border-color: #111b2e;
+  }
+  100% {
+    top: -20px;
+    left: -20px;
+  }
+}
+
+.img-box img {
+  max-width: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+
+.right-portion-text h4 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #111b2e;
+}
+
+.right-portion-text .subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #a4afb3;
+  margin-bottom: 15px;
+}
+
+.right-portion-text .intro {
+  margin-bottom: 24px;
+  line-height: 30px;
+  color: #f0f6ff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #111b2e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 15px;
+  transition: 0.5s ease;
+}
+
+.footer-links a:hover {
+  color: #f0f6ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
